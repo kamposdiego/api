@@ -1,0 +1,481 @@
+2025-05-27 15:30:24.255 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Starting ApiApplicationTests using Java 21.0.7 with PID 169542 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:30:24.256 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:30:24.483 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:30:24.483 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:30:24.495 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:30:24.527 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 Redis repository interface.
+2025-05-27 15:30:24.655 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:30:24.655 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:30:24.663 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:30:24.665 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-05-27 15:30:24.848 [N/A] INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 15:30:24.865 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:30:24.877 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:30:24.976 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:30:24.988 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:30:25.064 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71f8ce0e
+2025-05-27 15:30:25.064 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:30:25.095 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:30:25.368 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:30:25.386 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:30:25.909 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:30:25.934 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Started ApiApplicationTests in 1.84 seconds (process running for 2.224)
+2025-05-27 15:30:26.183 [N/A] INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bhsg.com.api.ApiApplication for test class bhsg.com.api.controller.EmployeesControllerTest
+2025-05-27 15:30:26.194 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Starting EmployeesControllerTest using Java 21.0.7 with PID 169542 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:30:26.195 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - The following 1 profile is active: "test"
+2025-05-27 15:30:26.416 [N/A] INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-27 15:30:26.416 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-27 15:30:26.417 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-27 15:30:26.425 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Started EmployeesControllerTest in 0.24 seconds (process running for 2.715)
+2025-05-27 15:30:26.619 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:30:26.620 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:30:26.621 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:30:30.216 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Starting ApiApplication using Java 21.0.7 with PID 169752 (/home/kamposdiego/Git/api/target/classes started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:30:30.217 [N/A] INFO  [main] bhsg.com.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:30:30.500 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:30:30.500 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:30:30.514 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:30:30.548 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 Redis repository interface.
+2025-05-27 15:30:30.676 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:30:30.677 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:30:30.686 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:30:30.688 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-05-27 15:30:30.929 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 15:30:30.936 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:30:30.937 [N/A] INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 15:30:30.937 [N/A] INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 15:30:30.961 [N/A] INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 15:30:30.961 [N/A] INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 723 ms
+2025-05-27 15:30:31.111 [N/A] INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 15:30:31.132 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:30:31.147 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:30:31.265 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:30:31.279 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:30:31.354 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20b67366
+2025-05-27 15:30:31.355 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:30:31.382 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:30:31.701 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:30:31.718 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:30:32.211 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:30:32.241 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:30:32.248 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 15:30:32.255 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Started ApiApplication in 2.29 seconds (process running for 2.456)
+2025-05-27 15:30:39.009 [N/A] INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-27 15:30:39.010 [N/A] INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-27 15:30:39.010 [N/A] INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-05-27 15:34:14.398 [N/A] INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 15:34:14.400 [N/A] INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 15:34:14.407 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:34:14.408 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:34:14.409 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:34:20.203 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Starting ApiApplicationTests using Java 21.0.7 with PID 170119 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:34:20.203 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:34:20.435 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:34:20.436 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:34:20.448 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:34:20.481 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 Redis repository interface.
+2025-05-27 15:34:20.603 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:34:20.603 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:34:20.611 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:34:20.613 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-05-27 15:34:20.819 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:34:20.832 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:34:20.928 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:34:20.942 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:34:21.015 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d5e3f55
+2025-05-27 15:34:21.016 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:34:21.041 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:34:21.330 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:34:21.346 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:34:21.877 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:34:21.908 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Started ApiApplicationTests in 1.855 seconds (process running for 2.225)
+2025-05-27 15:34:22.164 [N/A] INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bhsg.com.api.ApiApplication for test class bhsg.com.api.controller.EmployeesControllerTest
+2025-05-27 15:34:22.174 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Starting EmployeesControllerTest using Java 21.0.7 with PID 170119 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:34:22.174 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - The following 1 profile is active: "test"
+2025-05-27 15:34:22.417 [N/A] INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-27 15:34:22.417 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-27 15:34:22.418 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-27 15:34:22.429 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Started EmployeesControllerTest in 0.264 seconds (process running for 2.746)
+2025-05-27 15:34:22.627 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:34:22.628 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:34:22.630 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:34:35.578 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Starting ApiApplicationTests using Java 21.0.7 with PID 170318 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:34:35.579 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:34:35.801 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:34:35.801 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:34:35.814 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:34:35.849 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 Redis repository interface.
+2025-05-27 15:34:35.976 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:34:35.977 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:34:35.986 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:34:35.988 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-05-27 15:34:36.211 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:34:36.224 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:34:36.323 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:34:36.339 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:34:36.408 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6aae82cc
+2025-05-27 15:34:36.409 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:34:36.431 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:34:36.721 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:34:36.738 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:34:37.292 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:34:37.323 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Started ApiApplicationTests in 1.884 seconds (process running for 2.237)
+2025-05-27 15:34:37.574 [N/A] INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bhsg.com.api.ApiApplication for test class bhsg.com.api.controller.EmployeesControllerTest
+2025-05-27 15:34:37.585 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Starting EmployeesControllerTest using Java 21.0.7 with PID 170318 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:34:37.585 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - The following 1 profile is active: "test"
+2025-05-27 15:34:37.842 [N/A] INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-27 15:34:37.842 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-27 15:34:37.843 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-27 15:34:37.852 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Started EmployeesControllerTest in 0.276 seconds (process running for 2.767)
+2025-05-27 15:34:38.063 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:34:38.064 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:34:38.066 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:34:42.524 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Starting ApiApplication using Java 21.0.7 with PID 170536 (/home/kamposdiego/Git/api/target/classes started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:34:42.525 [N/A] INFO  [main] bhsg.com.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:34:42.812 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:34:42.812 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:34:42.827 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:34:42.861 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 Redis repository interface.
+2025-05-27 15:34:42.985 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:34:42.986 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:34:42.994 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:34:42.996 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-05-27 15:34:43.238 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 15:34:43.246 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:34:43.247 [N/A] INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 15:34:43.247 [N/A] INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 15:34:43.275 [N/A] INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 15:34:43.275 [N/A] INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 732 ms
+2025-05-27 15:34:43.441 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:34:43.456 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:34:43.585 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:34:43.602 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:34:43.675 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5edd9b4f
+2025-05-27 15:34:43.676 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:34:43.706 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:34:44.020 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:34:44.037 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:34:44.562 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:34:44.604 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:34:44.610 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 15:34:44.622 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Started ApiApplication in 2.343 seconds (process running for 2.513)
+2025-05-27 15:35:18.416 [N/A] INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 15:35:18.418 [N/A] INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 15:35:18.425 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:35:18.426 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:35:18.427 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:35:24.405 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Starting ApiApplication using Java 21.0.7 with PID 170732 (/home/kamposdiego/Git/api/target/classes started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:35:24.406 [N/A] INFO  [main] bhsg.com.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:35:24.679 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:35:24.679 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:35:24.693 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:35:24.726 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 Redis repository interface.
+2025-05-27 15:35:24.855 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:35:24.855 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:35:24.864 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:35:24.865 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-05-27 15:35:25.106 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 15:35:25.112 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:35:25.113 [N/A] INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 15:35:25.113 [N/A] INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 15:35:25.138 [N/A] INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 15:35:25.138 [N/A] INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 715 ms
+2025-05-27 15:35:25.297 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:35:25.311 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:35:25.427 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:35:25.443 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:35:25.512 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49ea13b6
+2025-05-27 15:35:25.513 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:35:25.540 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:35:25.866 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:35:25.883 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:35:26.381 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:35:26.409 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:35:26.417 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 15:35:26.428 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Started ApiApplication in 2.269 seconds (process running for 2.432)
+2025-05-27 15:35:36.161 [N/A] INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 15:35:36.163 [N/A] INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 15:35:36.171 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:35:36.172 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:35:36.173 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:35:42.812 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Starting ApiApplicationTests using Java 21.0.7 with PID 170985 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:35:42.813 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:35:43.055 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:35:43.055 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:35:43.070 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:35:43.101 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 Redis repository interface.
+2025-05-27 15:35:43.224 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:35:43.224 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:35:43.232 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:35:43.234 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-05-27 15:35:43.437 [N/A] INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 15:35:43.455 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:35:43.467 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:35:43.564 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:35:43.576 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:35:43.643 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2bf0c70d
+2025-05-27 15:35:43.644 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:35:43.668 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:35:43.953 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:35:43.970 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:35:44.483 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:35:44.512 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Started ApiApplicationTests in 1.855 seconds (process running for 2.234)
+2025-05-27 15:35:44.776 [N/A] INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bhsg.com.api.ApiApplication for test class bhsg.com.api.controller.EmployeesControllerTest
+2025-05-27 15:35:44.787 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Starting EmployeesControllerTest using Java 21.0.7 with PID 170985 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:35:44.787 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - The following 1 profile is active: "test"
+2025-05-27 15:35:45.027 [N/A] INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-27 15:35:45.027 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-27 15:35:45.028 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-05-27 15:35:45.037 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Started EmployeesControllerTest in 0.259 seconds (process running for 2.759)
+2025-05-27 15:35:45.234 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:35:45.236 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:35:45.238 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:35:52.921 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Starting ApiApplication using Java 21.0.7 with PID 171202 (/home/kamposdiego/Git/api/target/classes started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:35:52.922 [N/A] INFO  [main] bhsg.com.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:35:53.200 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:35:53.201 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:35:53.215 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:35:53.249 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 Redis repository interface.
+2025-05-27 15:35:53.376 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:35:53.376 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:35:53.384 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:35:53.386 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-05-27 15:35:53.625 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 15:35:53.631 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:35:53.632 [N/A] INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 15:35:53.632 [N/A] INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 15:35:53.656 [N/A] INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 15:35:53.656 [N/A] INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 716 ms
+2025-05-27 15:35:53.779 [N/A] INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27 15:35:53.797 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:35:53.811 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:35:53.926 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:35:53.939 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:35:54.011 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@631678e6
+2025-05-27 15:35:54.012 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:35:54.037 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:35:54.339 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:35:54.356 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:35:54.868 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:35:54.896 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:35:54.902 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 15:35:54.909 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Started ApiApplication in 2.236 seconds (process running for 2.407)
+2025-05-27 15:36:02.570 [N/A] INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 15:36:02.572 [N/A] INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 15:36:02.579 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:36:02.580 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:36:02.582 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:36:20.726 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Starting ApiApplicationTests using Java 21.0.7 with PID 171475 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:36:20.727 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:36:20.960 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:36:20.961 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:36:20.976 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:36:21.007 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 Redis repository interface.
+2025-05-27 15:36:21.123 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:36:21.124 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:36:21.132 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:36:21.134 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-05-27 15:36:21.342 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:36:21.355 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:36:21.452 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:36:21.465 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:36:21.540 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6081f330
+2025-05-27 15:36:21.541 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:36:21.570 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:36:21.849 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:36:21.866 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:36:22.426 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:36:22.457 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Started ApiApplicationTests in 1.882 seconds (process running for 2.26)
+2025-05-27 15:36:22.716 [N/A] INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bhsg.com.api.ApiApplication for test class bhsg.com.api.controller.EmployeesControllerTest
+2025-05-27 15:36:22.727 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Starting EmployeesControllerTest using Java 21.0.7 with PID 171475 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:36:22.727 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - The following 1 profile is active: "test"
+2025-05-27 15:36:22.976 [N/A] INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-27 15:36:22.976 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-27 15:36:22.977 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-27 15:36:22.989 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Started EmployeesControllerTest in 0.271 seconds (process running for 2.791)
+2025-05-27 15:36:23.193 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:36:23.194 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:36:23.196 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 15:36:26.641 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Starting ApiApplication using Java 21.0.7 with PID 171686 (/home/kamposdiego/Git/api/target/classes started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 15:36:26.642 [N/A] INFO  [main] bhsg.com.api.ApiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 15:36:26.919 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:36:26.919 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 15:36:26.934 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 15:36:26.967 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 Redis repository interface.
+2025-05-27 15:36:27.090 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 15:36:27.090 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 15:36:27.098 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 15:36:27.100 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-05-27 15:36:27.339 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 15:36:27.346 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:36:27.347 [N/A] INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 15:36:27.347 [N/A] INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-27 15:36:27.372 [N/A] INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 15:36:27.372 [N/A] INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 713 ms
+2025-05-27 15:36:27.523 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 15:36:27.539 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 15:36:27.659 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 15:36:27.675 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 15:36:27.743 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49ea13b6
+2025-05-27 15:36:27.743 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 15:36:27.771 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 15:36:28.077 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 15:36:28.095 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:36:28.644 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 15:36:28.674 [N/A] INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 15:36:28.681 [N/A] INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 15:36:28.694 [N/A] INFO  [main] bhsg.com.api.ApiApplication - Started ApiApplication in 2.293 seconds (process running for 2.464)
+2025-05-27 15:36:35.491 [N/A] INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-27 15:36:35.491 [N/A] INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-27 15:36:35.492 [N/A] INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-27 15:46:01.111 [N/A] INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 15:46:01.113 [N/A] INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 15:46:01.119 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 15:46:01.120 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 15:46:01.121 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 16:00:26.051 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Starting ApiApplicationTests using Java 21.0.7 with PID 173539 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 16:00:26.051 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 16:00:26.286 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 16:00:26.286 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 16:00:26.301 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 16:00:26.334 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 Redis repository interface.
+2025-05-27 16:00:26.451 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 16:00:26.452 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 16:00:26.460 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 16:00:26.462 [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-05-27 16:00:26.676 [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 16:00:26.688 [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 16:00:26.786 [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 16:00:26.799 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 16:00:26.871 [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7509226c
+2025-05-27 16:00:26.871 [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 16:00:26.897 [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 16:00:27.177 [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 16:00:27.193 [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 16:00:27.740 [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 16:00:27.770 [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Started ApiApplicationTests in 1.869 seconds (process running for 2.252)
+2025-05-27 16:00:28.020 [N/A] INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bhsg.com.api.ApiApplication for test class bhsg.com.api.controller.EmployeesControllerTest
+2025-05-27 16:00:28.031 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Starting EmployeesControllerTest using Java 21.0.7 with PID 173539 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 16:00:28.031 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - The following 1 profile is active: "test"
+2025-05-27 16:00:28.273 [N/A] INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-27 16:00:28.273 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-27 16:00:28.274 [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-27 16:00:28.283 [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Started EmployeesControllerTest in 0.261 seconds (process running for 2.766)
+2025-05-27 16:00:28.493 [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 16:00:28.495 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 16:00:28.497 [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-27 17:07:26.246 [N/A] [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Starting ApiApplicationTests using Java 21.0.7 with PID 176018 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 17:07:26.247 [N/A] [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 17:07:26.472 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 17:07:26.472 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-27 17:07:26.487 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.EmployeeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-27 17:07:26.517 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 Redis repository interface.
+2025-05-27 17:07:26.640 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-27 17:07:26.641 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27 17:07:26.652 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JPA - Could not safely identify store assignment for repository candidate interface bhsg.com.api.repository.PostRequestRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-05-27 17:07:26.655 [N/A] [N/A] INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-05-27 17:07:26.888 [N/A] [N/A] INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-27 17:07:26.902 [N/A] [N/A] INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-27 17:07:27.010 [N/A] [N/A] INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27 17:07:27.026 [N/A] [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-27 17:07:27.091 [N/A] [N/A] INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4bfe83d
+2025-05-27 17:07:27.091 [N/A] [N/A] INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-27 17:07:27.115 [N/A] [N/A] INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-27 17:07:27.402 [N/A] [N/A] INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-27 17:07:27.418 [N/A] [N/A] INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 17:07:27.982 [N/A] [N/A] INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-05-27 17:07:28.015 [N/A] [N/A] INFO  [main] bhsg.com.api.ApiApplicationTests - Started ApiApplicationTests in 1.917 seconds (process running for 2.287)
+2025-05-27 17:07:28.281 [N/A] [N/A] INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bhsg.com.api.ApiApplication for test class bhsg.com.api.controller.EmployeesControllerTest
+2025-05-27 17:07:28.300 [N/A] [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Starting EmployeesControllerTest using Java 21.0.7 with PID 176018 (started by kamposdiego in /home/kamposdiego/Git/api)
+2025-05-27 17:07:28.300 [N/A] [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - The following 1 profile is active: "test"
+2025-05-27 17:07:28.579 [N/A] [N/A] INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-27 17:07:28.579 [N/A] [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-27 17:07:28.580 [N/A] [N/A] INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-27 17:07:28.591 [N/A] [N/A] INFO  [main] b.c.a.c.EmployeesControllerTest - Started EmployeesControllerTest in 0.308 seconds (process running for 2.864)
+2025-05-27 17:07:28.797 [N/A] [N/A] INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27 17:07:28.798 [N/A] [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-27 17:07:28.801 [N/A] [N/A] INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
