@@ -14,7 +14,6 @@ public enum ErrorKeys {
     REDIS_INTERNAL("error.redisinternal"),
     REDIS_CONNECTION("error.redisconnection");
 
-
     final String baseKey;
     ErrorKeys(String baseKey) {
         this.baseKey = baseKey;
