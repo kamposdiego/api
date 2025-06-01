@@ -1,7 +1,9 @@
 package bhsg.com.api;
 
-import bhsg.com.api.repository.PostRequestRepository;
+import bhsg.com.api.service.CacheServiceGrpc;
 import bhsg.com.api.service.RDBMSService;
+import bhsg.com.cache.IdempotentServiceGrpc;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
@@ -19,8 +21,15 @@ public class TestConfig {
 
     @Bean
     @Primary
-    public PostRequestRepository postRequestRepository() {
-        return mock(PostRequestRepository.class);
+    public CacheServiceGrpc cacheServiceGrpc() {
+        return mock(CacheServiceGrpc.class);
+    }
+
+    @Bean
+    @Primary
+    @Qualifier("idempotentServiceBlockingStub")
+    public IdempotentServiceGrpc.IdempotentServiceBlockingStub idempotentServiceBlockingStub() {
+        return mock(IdempotentServiceGrpc.IdempotentServiceBlockingStub.class);
     }
 
 }

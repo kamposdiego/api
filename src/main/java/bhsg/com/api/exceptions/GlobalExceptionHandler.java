@@ -11,8 +11,6 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.dao.InvalidDataAccessApiUsageException;
 import org.springframework.dao.OptimisticLockingFailureException;
-import org.springframework.data.redis.RedisConnectionFailureException;
-import org.springframework.data.redis.RedisSystemException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -47,26 +45,13 @@ public class GlobalExceptionHandler {
         return messageSource.getMessage(code, null, MESSAGE_MISSING,locale);
     }
 
-    // === Redis Exceptions ===
-    @ExceptionHandler(RedisConnectionFailureException.class)
-    public ProblemDetail handleRedisConnectionFailureException(final RedisConnectionFailureException ex, final HttpServletRequest request) {
-        log.error("{} {} {} {} - {}", OUT, CONTROLLER, request.getMethod(), request.getRequestURI(), trace());
-
-        ProblemDetail problem = ProblemDetail.forStatus(HttpStatus.SERVICE_UNAVAILABLE);
-        problem.setTitle(localize(REDIS_CONNECTION.title(), request));
-        problem.setDetail(localize(REDIS_CONNECTION.detail(), request));
-        problem.setInstance(URI.create(request.getRequestURI()));
-        this.addTraceMetadata(problem);
-        return problem;
-    }
-
-    @ExceptionHandler({RedisSerializationException.class, RedisSystemException.class})
-    public ProblemDetail handleRedisInternalExceptions(final RuntimeException ex, final HttpServletRequest request) {
-        log.error("{} {} {} {} - {}", OUT, CONTROLLER, request.getMethod(), request.getRequestURI(), trace());
+    @ExceptionHandler(CacheServiceUnavailble.class)
+    public ProblemDetail handleCacheServiceUnavailble(final CacheServiceUnavailble ex, final HttpServletRequest request) {
+        log.error("{} {} {} {} - {}", OUT, CONTROLLER, request.getMethod(), request.getRequestURI(), trace(), ex);
 
         ProblemDetail problem = ProblemDetail.forStatus(HttpStatus.INTERNAL_SERVER_ERROR);
-        problem.setTitle(localize(REDIS_INTERNAL.title(), request));
-        problem.setDetail(localize(REDIS_INTERNAL.detail(), request));
+        problem.setTitle(localize(CACHE_UNAVAILABLE.title(), request));
+        problem.setDetail(localize(CACHE_UNAVAILABLE.detail(), request));
         problem.setInstance(URI.create(request.getRequestURI()));
         this.addTraceMetadata(problem);
         return problem;

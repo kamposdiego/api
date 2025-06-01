@@ -10,9 +10,8 @@ public enum ErrorKeys {
     DATA_INTEGRITY("error.dataintegrity"),
     METHOD_ARGUMENT_NOT_VALID("error.methodargumentnotvalid"),
     METHOD_ARGUMENT_TYPE_MISMATCH("error.methodargumenttypemismatch"),
-    ILLEGAL_IDEMPOTENT_STATE("error.illegalidempotentstate"),
-    REDIS_INTERNAL("error.redisinternal"),
-    REDIS_CONNECTION("error.redisconnection");
+    CACHE_UNAVAILABLE("error.cacheunavailable"),
+    ILLEGAL_IDEMPOTENT_STATE("error.illegalidempotentstate");
 
     final String baseKey;
     ErrorKeys(String baseKey) {

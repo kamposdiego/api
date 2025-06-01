@@ -25,7 +25,7 @@ class RDBMSServiceTest {
     private EmployeeRepository employeeRepository;
 
     @Mock
-    private InMemoryService inMemoryService;
+    private CacheServiceGrpc cacheServiceGrpc;
 
     @InjectMocks
     private RDBMSService rdbmsService;
@@ -45,7 +45,7 @@ class RDBMSServiceTest {
     void shouldSaveEmployee(){
         final Employee employee = new Employee(UUID.randomUUID(), "Diego");
 
-        when(inMemoryService.existsById(any())).thenReturn(false);
+        when(cacheServiceGrpc.existsById(any())).thenReturn(false);
         when(employeeRepository.save(any())).thenReturn(new EmployeeEntity(UUID.randomUUID(), "diego"));
 
         final Employee employeeList = rdbmsService.createEmployee(employee);

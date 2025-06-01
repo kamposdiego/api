@@ -2,7 +2,6 @@ package bhsg.com.api.controller;
 
 import bhsg.com.api.dtos.Employee;
 import bhsg.com.api.service.RDBMSService;
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

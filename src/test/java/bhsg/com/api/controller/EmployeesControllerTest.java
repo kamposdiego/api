@@ -2,12 +2,14 @@ package bhsg.com.api.controller;
 
 import bhsg.com.api.TestConfig;
 import bhsg.com.api.dtos.Employee;
-import bhsg.com.api.repository.PostRequestRepository;
 import bhsg.com.api.service.RDBMSService;
+import bhsg.com.cache.IdempotentServiceGrpc;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
@@ -34,7 +36,8 @@ class EmployeesControllerTest {
     private RDBMSService rdbmsService;
 
     @Autowired
-    private PostRequestRepository redisRepository;
+    @Qualifier("idempotentServiceBlockingStub")
+    private IdempotentServiceGrpc.IdempotentServiceBlockingStub idempotentServiceBlockingStub;
 
     @Test
     @DisplayName("Should return all the employees")

@@ -10,7 +10,7 @@ public final class LoggingConstants {
         public static final String CONTROLLER = "[CONTROLLER]";
         public static final String SERVICE = "[SERVICE]";
         public static final String FILTER = "[FILTER]";
-        public static final String REDIS = "[REDIS]";
+        public static final String CACHE = "[CACHE]";
         public static final String IDEMPOTENT = "[IDEMPOTENT]";
         public static final String ERROR = "[ERROR]";
     }
