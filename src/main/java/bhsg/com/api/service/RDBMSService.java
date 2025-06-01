@@ -57,15 +57,19 @@ public class RDBMSService {
     }
 
     @Transactional
-    public Employee createEmployee(final Employee employee) {
+    public Employee createEmployee(final Employee employee, final String xIdempotencyKey) {
         log.debug("{} {} Creating employee: {} - {}", LoggingConstants.Symbols.IN, LoggingConstants.Tags.SERVICE, employee, trace());
 
         final var requestId = MDC.get(REQUEST_ID_HEADER);
 
-        if (cacheServiceGrpc.existsById(requestId)) {
+
+
+        final var cacheValue = cacheServiceGrpc.existsById(xIdempotencyKey);
+
+        if (cacheValue.isPresent()) {
             log.warn("{} {} Request ID {} was already handled - {}", LoggingConstants.Symbols.IDEMPOTENT_REPLAY, LoggingConstants.Tags.IDEMPOTENT, requestId, trace());
 
-            final var existing = employeeRepository.findById(employee.id())
+            final var existing = employeeRepository.findById(cacheValue.get())
                     .orElseThrow(() -> new IllegalIdempotentStateException(requestId));
 
             return new Employee(existing.getId(), existing.getName());
@@ -73,7 +77,7 @@ public class RDBMSService {
 
         final var entity = employeeRepository.save(new EmployeeEntity(employee.id(), employee.name()));
 
-        cacheServiceGrpc.createPostRequest(requestId);
+        cacheServiceGrpc.createPostRequest(xIdempotencyKey, entity.getId().toString());
 
         log.info("{} {} Employee created with ID {} - {}", LoggingConstants.Symbols.OUT, LoggingConstants.Tags.SERVICE, entity.getId(), trace());
         return new Employee(entity.getId(), entity.getName());

@@ -43,10 +43,11 @@ class EmployeesControllerIT {
     @Test
     @DisplayName("Should return all the employees")
     void shouldPostTheRecord() throws Exception {
-        given(rdbmsService.createEmployee(any())).willReturn(new Employee(UUID.randomUUID(), "Diego"));
+        given(rdbmsService.createEmployee(any(), any())).willReturn(new Employee(UUID.randomUUID(), "Diego"));
 
         mockMvc.perform(post("/v1/employees").contentType(MediaType.APPLICATION_JSON)
                         .header("requestId", "3d1cc5a6-0670-4e04-a708-0014efca607d")
+                        .header("X-Idempotency-ID", "1d1cc5a6-0670-4e04-a708-0014efca607d")
                         .content("{\"id\":\"9d1cc5a6-0670-4e04-a708-0014efca607d\", \"name\":\"diego\"}"))
                 .andExpect(status().isCreated());
     }

@@ -49,10 +49,10 @@ public class EmployeesController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Employee postEmployee(@RequestBody @Validated final Employee employee){
+    public Employee postEmployee(@RequestBody @Validated final Employee employee, @RequestHeader("X-Idempotency-ID") final String xIdempotencyID){
         log.info("{} {} [POST] /v1/employees - creating employee={} - {}", IN, CONTROLLER, employee, trace());
 
-        final var employeePosted = RDBMSService.createEmployee(employee);
+        final var employeePosted = RDBMSService.createEmployee(employee, xIdempotencyID);
 
         log.info("{} {} [POST] /v1/employees - created employeeId={}, status=201 - {}", OUT, CONTROLLER, employeePosted.id(), trace());
         return employeePosted;

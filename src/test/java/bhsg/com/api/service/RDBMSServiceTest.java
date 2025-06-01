@@ -12,6 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
@@ -45,10 +46,10 @@ class RDBMSServiceTest {
     void shouldSaveEmployee(){
         final Employee employee = new Employee(UUID.randomUUID(), "Diego");
 
-        when(cacheServiceGrpc.existsById(any())).thenReturn(false);
+        when(cacheServiceGrpc.existsById(any())).thenReturn(Optional.empty());
         when(employeeRepository.save(any())).thenReturn(new EmployeeEntity(UUID.randomUUID(), "diego"));
 
-        final Employee employeeList = rdbmsService.createEmployee(employee);
+        final Employee employeeList = rdbmsService.createEmployee(employee, UUID.randomUUID().toString());
 
         assertThat(employeeList).hasNoNullFieldsOrProperties();
     }
