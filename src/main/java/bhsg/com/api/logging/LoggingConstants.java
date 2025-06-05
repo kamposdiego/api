@@ -13,12 +13,13 @@ public final class LoggingConstants {
         public static final String CACHE = "[CACHE]";
         public static final String IDEMPOTENT = "[IDEMPOTENT]";
         public static final String ERROR = "[ERROR]";
+        public static final String RETRY = "[RETRY]";
     }
 
     public static final class Symbols {
         public static final String IN = "→";
         public static final String OUT = "←";
-        public static final String IDEMPOTENT_REPLAY = "↻";
+        public static final String REPLAY = "↻";
         public static final String ERROR = "✖";
         public static final String CLEANUP = "🧹";
     }

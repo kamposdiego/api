@@ -21,7 +21,7 @@ import static bhsg.com.api.logging.LoggingConstants.Tags.CONTROLLER;
 @Slf4j
 @Validated
 @RestController
-@RequestMapping(value = "/v1/employees", produces = "application/JSON")
+@RequestMapping(value = "/v1/employees/", produces = "application/JSON")
 @RequiredArgsConstructor
 public class EmployeesController {
 
